@@ -1,0 +1,69 @@
+html, body{
+	margin:0;
+	padding: 0;
+	background-color: yellowgreen;
+	width: 100%;
+	height: 100%;
+}
+#pageScroll{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#content{
+	width: 200%;
+	height: 200%;
+	position: relative;
+}
+.centerObj{
+	width: 640px;
+	height: 300px;
+	margin: 50% auto;
+	display: block;
+	background: #fff;
+	text-align: center;
+}
+.centerObj span{
+	line-height: 100%;
+	font-family: monospace;
+	font-size: 50px;
+	line-height: 300px;
+}
+#navBox{
+	width: 200px;
+	height: 110px;
+	background: #000;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+}
+#navBox a,#navBox span{
+	color: #fff;
+}
+#navBox a{
+	text-decoration: none;
+	position: absolute;
+	float: left;
+	font-size: 30px;
+}
+#left{
+	left:5px;
+	top: 45px;
+}
+#right{
+	right: 5px;
+	top: 45px;
+}
+#up{
+	top: 5px;
+	left: 90px;
+}
+#down{
+	bottom: 5px;
+	left: 90px;
+}
+#navBox a.keyboard_bt_active{
+	color: red;
+}

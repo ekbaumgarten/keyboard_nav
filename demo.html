@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Keyboard Navigation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="keyboard_nav.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#pageScroll').keyboard_nav({
+				btnMouseRightObj:$('#right'),
+				btnMouseLeftObj:$('#left'),
+				btnMouseUpObj:$('#up'),
+				btnMouseDownObj:$('#down'),
+				centerPageAt:$('.centerObj'),
+				spollPercent:.05,
+				onScrollCallback:function(_obj,direction){}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="pageScroll">
+		<div id="content">
+			<div class="centerObj">
+				<span>My center object</span>
+			</div>
+		</div>
+	</div>
+	<div id="navBox">
+		<a id="left" href="javascript:void(0);"><</a>
+		<a id="up" href="javascript:void(0);">/\</a>
+		<a id="right" href="javascript:void(0);">></a>
+		<a id="down" href="javascript:void(0);">\/</a>
+	</div>
+</body>
+</html>
